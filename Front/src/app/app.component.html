@@ -1,0 +1,192 @@
+<div class="Body">
+
+  
+<div class="row">
+  <div class="col-6">
+
+    <div class="card   mb-3" style="max-width: 50rem;">
+      <div class="card-header">-Idantité</div>
+      <div class="card-body">
+        
+                  <div class="card-text"> 
+                    <div class="form-group">
+                                        <!-- Nom et Prenom  -->
+                           <label >Civilité</label> <label >Nom</label> <label > Prenom </label> <br>
+                              <select >
+                                <option>Ms.</option>
+                                <option>Mrr.</option>
+                              </select> 
+                            <input type="text" id="nom" placeholder="Nom" class ="form-control" [(ngModel)] = "person.Nom" name = "Nom">  <mat-icon>person</mat-icon>
+                            <input type="text" placeholder="Prenom" class ="form-control" [(ngModel)] = "person.Prenom" name = "Prenom">  <mat-icon>person</mat-icon>
+                    </div>    
+                                                                  <br> 
+                         
+                    <div class="form-group">
+                                        <!-- Date de naissance  -->
+                           <label >Date de naissance </label> <br>
+                           <input type="text" placeholder="Date de naissance" class ="form-control" id="Date_naissance" [(ngModel)] = "person.Date_naissance" name = "Date_naissance"> <mat-icon>calendar_today</mat-icon>
+                     </div>                
+                                                                  <br>
+                                        <!-- Cituation familiale -->
+                      <div class="form-group">
+                             <label > Cituation familiale  </label> <br>
+                                 <select >
+                                     <option>Celib</option>
+                                     <option>Mariee</option>
+                                  </select> 
+                        </div>
+                                                                    <br>
+                            <div class="form-group">
+                                         <!-- Nombre denfants  -->
+                             <input type="text" placeholder="Nombre d'enfants" class ="form-control" id="N_enfants" [(ngModel)] = "person.N_enfants" name = "N_enfants" >  <mat-icon>group</mat-icon>
+                            </div>
+                           
+           </div>
+      </div>
+    </div>
+    
+  </div>
+
+
+
+
+  <div class="col-6">
+
+    <div class="card  mb-3" style="max-width: 25rem;">
+      <div class="card-header">-Contact</div>
+      <div class="card-body">
+        <div  class="card-text">
+                                         <!-- email -->
+                 <div class="form-group">
+                          <label >email</label><br>
+                          <input type="text" placeholder="Email" class ="form-control" id="Email" [(ngModel)] = "person.Email" name = "Email"> 
+                 </div>
+                                                               <br>
+                                         <!-- telephone -->
+                  <div class="form-group">
+                           <input type="text" placeholder="Telephone" class ="form-control" id="Telephone"  [(ngModel)] = "person.Telephone" name = "Telephone"> <mat-icon>phone_enabled</mat-icon> 
+                  </div>    
+                                                                <br> 
+                                         <!-- 2 eme Telephone -->
+                   <div class="form-group">
+                             <input type="text" placeholder="2 eme Telephone" class ="form-control" id="Telephone2" [(ngModel)] = "person.Telephone2" name = "Telephone2">  <mat-icon>phone_enabled</mat-icon> 
+                   </div>
+                                                                  <br>
+                                          <!-- Mobile -->
+                   <div class="form-group">
+                            <input type="text" placeholder="Mobile" class ="form-control" id="Mobile" [(ngModel)] = "person.Mobile" name = "Mobile"> <mat-icon>phone_enabled</mat-icon>
+                   </div>
+                                                                 <br>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <div class="col-6">
+
+    <div class="card  mb-3" style="max-width: 50rem;">
+      <div class="card-header">-Adresse</div>
+      <div class="card-body">
+        <div class="card-text">
+                                            <!-- Adresse -->
+                   <div class="form-group">
+                             <input type="text" placeholder="Adresse" class ="form-control" id="Adresse" [(ngModel)] = "person.Adresse" name = "Adresse"> <mat-icon> location_on</mat-icon>
+                   </div>
+                                                  <br>
+                                             <!-- Pays & Ville  -->
+                    <div class="form-group">
+                              <label >Pays</label> <label >Ville</label> <br>
+                              <input type="text" placeholder="Pays" class ="form-control" id="Pays" [(ngModel)] = "person.Pays" name = "Pays">
+                              <input type="text" placeholder="Ville" class ="form-control" id="Ville" [(ngModel)] = "person.Ville" name = "Ville"> 
+                     </div>
+                                                  <br>
+                                              <!-- Rue -->
+                      <div class="form-group">
+                               <label >Rue</label>  <label >N° Rue</label>  <label >Code Postal</label> <br>
+                               <input type="text" placeholder="Rue" class ="form-control" id="Rue" [(ngModel)] = "person.Rue" name = "Rue">
+                               <input type="text" placeholder="N° Rue" class ="form-control" id="RueN" [(ngModel)] = "person.RueN" name = "RueN"> 
+                               <input type="text" placeholder="Code Postal" class ="form-control" id="Codepostal" [(ngModel)] = "person.Codepostal" name = "Codepostal">
+                        </div> 
+                                                   <br>
+                                      <!-- Completement d'adresse -->
+                         <div class="form-group">      
+                                      <label >Completement d'adresse</label> <br>
+                                <input type="text" placeholder="Completement d'adresse" class ="form-control" id="ComplementAdresse" [(ngModel)] = "person.ComplementAdresse" name = "ComplementAdresse">
+                              </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="col-6">
+    
+    <div class="card  mb-3" style="max-width: 25rem;">
+      <div class="card-header">-Information Complementaire </div>
+      <div class="card-body">
+        <div class="card-text">
+                          <div class="form-group">
+                                <input type="text" placeholder="Mots-clés" class ="form-control" id="Motscles"  [(ngModel)] = "person.Motscles" name = "Motscles">
+                           </div> 
+                                                      <br>
+                            <div class="form-group">                          
+                                  <label >Commentaire sur le prospect</label>
+                                   <textarea name="Cmt" id="Commantaire" cols="50" rows="5" class ="form-control" [(ngModel)] = "person.Commantaire" name = "Commantaire"></textarea>
+                                 </div>
+     
+                          </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+  </div>
+</div>
+
+
+
+<div class="Relation">
+  <Label>Relation</Label>
+                    <!-- Afficher -->
+  <div class="Afficher">
+    <label *ngFor = "let person of persons"></label> 
+     Afficher  <input type="text" id="elements" {{person.elements}}>  élements
+  </div>
+                     <!-- search -->
+  <div class="search" *ngFor = "let person of persons">
+     <input type="text" placeholder="Recherche..." id="Nom"  {{person.Nom}}>
+  </div>
+
+
+   <div class="container">
+
+        <div class="row">
+                        <div class="col">#</div>
+                        <div class="col">Nom</div>
+                        <div class="col ">Relation </div>
+                        <div class="col ">Action</div>
+          </div>
+
+         <div class="row" *ngFor = "let person of persons">
+                        <div class="col"> {{person.id}}  </div>
+                        <div class="col">{{person.Nom}}</div>
+                        <div class="col "> {{person.Relation}} </div>
+                        <div class="col ">......</div>
+           </div>
+    
+
+
+
+   </div>
+
+</div>
+
